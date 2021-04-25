@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Publicacion ~ Taller Mecanico Makween</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/crearpublicacion.css">
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- cabecera -->
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-cab"> Taller Mecanico Makween</h1>
+            <!-- visualizar menu al momento de ejecutar responsive-->
+            <input type="checkbox" name="" id="menu-bar">
+            <label class="icon-th-list" for="menu-bar"></label>
+            <!-- menu -->
+            <nav class="menu">
+                <a href="principal.html">Home</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="registro.html">Registrarse</a>
+                <a href="inicioSesion.html">Iniciar Sesion</a>
+            </nav>
+        </div>
+    </header>
+    <!-- contenido principal -->
+    <main>
+        <section id="banner">
+            <img src="img/makween.png" alt="">
+            <div class="contenedor">
+                <h2>Taller Mecanico Makween</h2>
+                <p>Mecanicos de alto nivel para su vehiculo</p>
+                
+            </div>
+        </section>       
+
+        <section id="bienvenido">
+            <h2>Crear Publicacion de Asistencia Mecanica</h2>
+            <p>A continuacion se presenta el formulario para registrar una asistencia mecanica realizada en el taller.</p>
+        </section>
+
+        <section id="publica-input">
+
+            <form class="publica-registro" action="" method="POST" onsubmit="return valida()">
+
+                <h2 class="publica-titulo">Crear Publicacion</h2>
+
+                <div class="publica">
+
+                    <input class="col-100" type="text" name="txtTitulo" id="txtTitulo" placeholder="ingrese titulo de la publicacion" required minlength="15">                    
+                    <input class="col-100" type="text" name="txtMecanico" id="txtMecanico" placeholder="ingrese nombre del mecanico encargado" required minlength="5" maxlength="50">
+                    <input class="col-48" type="date" name="txtFechaIngreso" id="txtFechaIngreso" required>                    
+                    <input class="col-48" type="date" name="txtFechaRetiro" id="txtFechaRetiro" required>
+                    <input class="col-100" type="text" name="txtDiagnostico" id="txtDiagnostico" placeholder="ingrese diagnostico del vehiculo" required minlength="8" maxlength="50">
+                    <input class="col-100" type="text" name="txtMateriales" id="txtMateriales" placeholder="ingrese materiales utilizados" required minlength="8" maxlength="50">
+
+                    <input class="btn-enviar" type="submit" value="Enviar">                    
+                </div>
+            </form>
+            
+        </section>
+    <footer>
+        <div class="contenedor">
+            <h3>Taller Mecanico Makween - Diseño Web</h3>
+            
+        </div>
+    </footer>
+</body>
+</html>

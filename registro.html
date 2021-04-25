@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro ~ Taller Mecanico Makween</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/registroinicio.css">
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- cabecera -->
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-cab"> Taller Mecanico Makween</h1>
+            <!-- visualizar menu al momento de ejecutar responsive-->
+            <input type="checkbox" name="" id="menu-bar">
+            <label class="icon-th-list" for="menu-bar"></label>
+            <!-- menu -->
+            <nav class="menu">
+                <a href="principal.html">Home</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="registro.html">Registrarse</a>
+                <a href="inicioSesion.html">Iniciar Sesion</a>
+            </nav>
+        </div>
+    </header>
+    <!-- contenido principal -->
+    <main>
+        <section id="banner">
+            <img src="img/makween.png" alt="">
+            <div class="contenedor">
+                <h2>Taller Mecanico Makween</h2>
+                <p>Mecanicos de alto nivel para su vehiculo</p>
+                
+            </div>
+        </section>
+
+        <section id="bienvenido">
+
+            <h2>Formulario Registro de Usuario Makween</h2>
+            <p>A continuacion se presenta el formulario para poder registrarse y accedera todas nuestras funciones de la pagina web.</p>
+        </section>
+
+        <section id="formu">
+
+            <form class="form-registro" action="" method="POST" onsubmit="return valida()">
+
+                <h2 class="form-titulo">Creacion de Cuenta</h2>
+
+                <div class="contenedor-imput">
+
+                    <input class="col-48" type="email" name="txtEmail" id="txtEmail" placeholder="ingrese su email" required minlength="10">                    
+                    <input class="col-48" type="text" name="txtUsuario" id="txtUsuario" placeholder="ingrese nombre usuario" required minlength="5" maxlength="15">
+                    <input class="col-48" type="password" name="txtPass" id="txtPass" placeholder="ingrese la contraseña" required minlength="8" maxlength="12">
+                    <input class="col-48" type="password" name="txtPass" id="txtPass" placeholder="repita la contraseña" required minlength="8" maxlength="12">
+                    
+
+                    <input class="btn-enviar" type="submit" value="Registrar">
+                    
+                </div>
+            </form>
+
+        </section>
+
+    <footer>
+        <div class="contenedor">
+            <h3>Taller Mecanico Makween - Diseño Web</h3>
+            
+        </div>
+       
+    </footer>
+</body>
+
+
+</html>
